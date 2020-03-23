@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+      var line = prompt('How many lines?')
+    </script>
+    <style>
+      *{
+        padding:0;
+        margin:0;
+      }
+
+      p{
+        font-size: 3em;
+        font-style: normal;
+        font-family: impact;
+        color:white;
+        margin-left:380px;
+        padding-top:300px;
+        text-transform: uppercase;
+      }
+      #tri{
+        height:800px;
+        width:1450px;
+        background-image: linear-gradient(#e66465, #9198e5);
+      }
+      #home{
+        position: absolute;
+        left:48%;
+        top:60%;
+        border: solid 2px grey;
+        text-decoration: none;
+        background-color: grey;
+        width: 67px;
+        height: 25px;
+        padding-left: 28px;
+        padding-top: 5px;
+        border-radius: 7px;
+        color: white;
+        font-family: sans-serif;
+        transition-duration: 0.8s;
+        transition-property: all;
+        text-decoration: none;
+        font-size:13px;
+      }
+      #home:hover{
+        transform: scale(1.2);
+        background-color: white;
+        color: grey;
+        border: solid 2px white;
+      }
+    </style>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+      var output = "";
+
+      for (var i=line; i>0 ;i-- )
+       {
+        for (var j = line - i ;j>0 ;j-- )
+       {
+         output += ' ';
+         }
+
+       for (var k=i*2-1 ;k >0 ;k-- )
+       {output += "*";}
+
+         output += "\n";
+       }
+
+       alert(output);
+    </script>
+        <div id="tri">
+          <p>Here's Your Wide Reversed Triangle!</p>
+          <a href="index.html" id="home">Home</a>
+
+        </div>
+  </body>
+</html>
